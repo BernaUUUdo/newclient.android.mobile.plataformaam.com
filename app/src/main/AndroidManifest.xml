@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.plataformaam.mobile.android.newclient.newclient" >
+    package="com.plataformaam.mobile.android.newclient.app" >
+
+
 
     <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +18,7 @@
 
 
         <activity
-            android:name=".StartScreen"
+            android:name="com.plataformaam.mobile.android.newclient.app.StartScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,11 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginUI"
+            android:name="com.plataformaam.mobile.android.newclient.app.LoginUI"
             android:label="@string/title_activity_login_ui" >
         </activity>
         <activity
-            android:name=".AfterLoginUI"
+            android:name="com.plataformaam.mobile.android.newclient.app.AfterLoginUI"
             android:label="@string/title_activity_after_login_ui" >
         </activity>
         <activity android:name="com.facebook.FacebookActivity"

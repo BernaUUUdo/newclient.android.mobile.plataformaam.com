@@ -1,4 +1,4 @@
-package com.plataformaam.mobile.android.newclient.newclient;
+package com.plataformaam.mobile.android.newclient.app;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
