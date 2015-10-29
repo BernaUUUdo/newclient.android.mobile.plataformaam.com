@@ -1,77 +1,42 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
 
-
-
-
-
-    <style name="btn_danger">
-        <item name="android:background">@drawable/btn_danger_bg</item>
-        <item name="android:textColor" >#ffffff</item>
-        <item name="android:gravity" >center</item>
-        <item name="android:textStyle" >bold</item>
-        <item name="android:shadowColor" >#000000</item>
-        <item name="android:shadowDx" >1</item>
-        <item name="android:shadowDy" >1</item>
-        <item name="android:shadowRadius" >2</item>
-    </style>
-
-    <style name="btn_primary">
-        <item name="android:background">@drawable/btn_primary_bg</item>
-        <item name="android:textColor" >#ffffff</item>
-        <item name="android:gravity" >center</item>
-        <item name="android:textStyle" >bold</item>
-        <item name="android:shadowColor" >#000000</item>
-        <item name="android:shadowDx" >1</item>
-        <item name="android:shadowDy" >1</item>
-        <item name="android:shadowRadius" >2</item>
-    </style>
-
-    <style name="btn_info">
-        <item name="android:background">@drawable/btn_info_bg</item>
-        <item name="android:textColor" >#ffffff</item>
-        <item name="android:gravity" >center</item>
-        <item name="android:textStyle" >bold</item>
-        <item name="android:shadowColor" >#000000</item>
-        <item name="android:shadowDx" >1</item>
-        <item name="android:shadowDy" >1</item>
-        <item name="android:shadowRadius" >2</item>
-    </style>
-
-    <style name="btn_success">
+    <style name="btn_success"  parent="PlataformaAmButtonStyle">
         <item name="android:background">@drawable/btn_success_bg</item>
-        <item name="android:textColor" >#ffffff</item>
-        <item name="android:gravity" >center</item>
-        <item name="android:textStyle" >bold</item>
-        <item name="android:shadowColor" >#000000</item>
-        <item name="android:shadowDx" >1</item>
-        <item name="android:shadowDy" >1</item>
-        <item name="android:shadowRadius" >2</item>
     </style>
-    <style name="btn_default">
+
+    <style name="btn_danger"  parent="PlataformaAmButtonStyle" >
+        <item name="android:background">@drawable/btn_danger_bg</item>
+    </style>
+
+
+    <style name="btn_primary"  parent="PlataformaAmButtonStyle">
+        <item name="android:background">@drawable/btn_primary_bg</item>
+    </style>
+
+    <style name="btn_info"  parent="PlataformaAmButtonStyle">
+        <item name="android:background">@drawable/btn_info_bg</item>
+    </style>
+
+
+    <style name="btn_default"  parent="PlataformaAmButtonStyle">
         <item name="android:background">@drawable/btn_default_bg</item>
-        <item name="android:textColor" >#ffffff</item>
-        <item name="android:gravity" >center</item>
-        <item name="android:textStyle" >bold</item>
-        <item name="android:shadowColor" >#000000</item>
-        <item name="android:shadowDx" >1</item>
-        <item name="android:shadowDy" >1</item>
-        <item name="android:shadowRadius" >2</item>
     </style>
-    <style name="btn_warning">
+
+    <style name="btn_warning"  parent="PlataformaAmButtonStyle">
         <item name="android:background">@drawable/btn_warning_bg</item>
-        <item name="android:textColor" >#ffffff</item>
-        <item name="android:gravity" >center</item>
-        <item name="android:textStyle" >bold</item>
+    </style>
+    <style name="PlataformaAmButtonStyle" parent="@android:style/Widget.Button.Small">
+        <item name="android:shadowRadius" >2</item>
+        <item name="android:padding" >10sp</item>
         <item name="android:shadowColor" >#000000</item>
         <item name="android:shadowDx" >1</item>
         <item name="android:shadowDy" >1</item>
-        <item name="android:shadowRadius" >2</item>
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textStyle" >bold</item>
     </style>
-
-
 </resources>

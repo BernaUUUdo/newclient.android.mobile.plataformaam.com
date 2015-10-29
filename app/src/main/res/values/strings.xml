@@ -6,8 +6,11 @@
 
     <string name="plataformaAM_Long">Plataforma Aprendizagem em Movimento</string>
     <string name="plataformaAM_Short">Plataforma AM</string>
-    <string name="title_activity_login_ui">LoginUI</string>
-    <string name="title_activity_after_login_ui">AfterLoginUI</string>
+
+    <!-- Título das Atividades -->
+    <string name="title_activity_login_ui">Bem vindo !</string>
+    <string name="title_dialog_login_am">Efetue seu Login !</string>
+    <string name="title_activity_after_login_ui">Plataforma AM</string>
 
 
 
@@ -26,7 +29,7 @@
 
 
     <!-- Buttons Names -->
-    <string name="btnDoLogin">Logar!</string>
+    <string name="btnDoLogin">Logar pela Plataforma AM!</string>
     <string name="btnDoLogout">Logout!</string>
     <string name="btnDoRegister">Registrar!</string>
     <string name="btnCreate">Criar!</string>

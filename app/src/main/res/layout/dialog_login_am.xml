@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/formContainerUserLoginUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        >
+        <!-- android:background="@drawable/form_box_layout_bg" -->
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etxLoginUserLoginUI"
+            android:hint="@string/lblLogin"
+            android:layout_below="@+id/txtLoginUIGreeting"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            android:id="@+id/etxPasswordUserLoginUI"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="@string/lblPassword"
+            android:layout_below="@+id/etxLoginUserLoginUI"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnDoLogin"
+            android:hint="@string/btnDoLogin"
+
+            android:id="@+id/plataformaam_do_login_button"
+            android:layout_gravity="right"
+
+            android:layout_below="@+id/etxPasswordUserLoginUI"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="doLogin"
+            style="@style/btn_success"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
