@@ -1,5 +1,6 @@
 package com.plataformaam.mobile.android.newclient.app;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,8 +24,10 @@ import com.facebook.login.widget.LoginButton;
 
 public class LoginUI extends ActionBarActivity {
 
+    final Context context = this;
     LoginButton facebook_login_button;
     Button plataformaam_login_button;
+    Button plataformaam_do_login_Button;
     CallbackManager callbackManager;
 
 
@@ -123,7 +126,35 @@ public class LoginUI extends ActionBarActivity {
     }
 
     private void preparePlataformaAMLogin(){
-        Log.e(LoginUI.class.getName(),"preparePlataformaAMLogin() : Nao implementado");
+        plataformaam_login_button = (Button) findViewById(R.id.plataformaam_login_button);
+        plataformaam_login_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLoginAMDialog();
+            }
+        });
+
+    }
+
+    public void openLoginAMDialog(){
+        // inspired by http://www.mkyong.com/android/android-custom-dialog-example/
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.dialog_login_am);
+        dialog.setTitle(getString(R.string.title_dialog_login_am));
+
+        Button dialog_do_login_button =  (Button) dialog.findViewById(R.id.plataformaam_do_login_button);
+        dialog_do_login_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO
+                Toast.makeText(getApplicationContext(), "TODO login ", Toast.LENGTH_SHORT).show();
+            }
+        });
+        dialog.show();
+    }
+
+    public void doLoginAM(String login,String password){
+
     }
 
 
