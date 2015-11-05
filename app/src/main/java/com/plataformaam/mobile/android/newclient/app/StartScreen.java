@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.plataformaam.mobile.android.newclient.app.activities.LoginActivity;
+
 public class StartScreen extends ActionBarActivity {
 
     @Override
@@ -33,7 +35,7 @@ public class StartScreen extends ActionBarActivity {
 
 
     public void goToLogin(){
-        Intent intent = new Intent(StartScreen.this,LoginUI.class);
+        Intent intent = new Intent(StartScreen.this,LoginActivity.class);
         startActivity(intent);
     }
 }

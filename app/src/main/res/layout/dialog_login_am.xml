@@ -23,7 +23,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/etxLoginUserLoginUI"
             android:hint="@string/lblLogin"
-            android:layout_below="@+id/txtLoginUIGreeting"
             android:layout_alignParentStart="true" />
 
         <EditText
@@ -53,7 +52,6 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:onClick="doLogin"
             style="@style/btn_success"
             />
 
