@@ -1,17 +1,18 @@
 <resources>
-    <string name="app_name">New Client</string>
+    <string name="app_name">Learning Motion</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
     <string name="plataformaAM_Long">Plataforma Aprendizagem em Movimento</string>
-    <string name="plataformaAM_Short">Plataforma AM</string>
+    <string name="plataformaAM_Short">Aprendizagem em Movimento</string>
+    <string name="plataformaAM_StartScreen">Aprendizagem\nem\nMovimento</string>
 
     <!-- Título das Atividades -->
-    <string name="title_activity_login_ui">Bem vindo !</string>
-    <string name="title_dialog_login_am">Efetue seu Login !</string>
+    <string name="title_activity_login_ui">Efetue seu Login !</string>
+    <string name="title_dialog_login_am">Aprendizagem em Movimento!</string>
     <string name="title_activity_after_login_ui">Plataforma AM</string>
-
+    <string name="title_activity_login">Aprendizagem em Movimento!</string>
 
 
 
@@ -31,7 +32,7 @@
     <!-- Buttons Names -->
     <string name="btnDoLogin">Logar pela Plataforma AM!</string>
     <string name="btnDoLogout">Logout!</string>
-    <string name="btnDoRegister">Registrar!</string>
+    <string name="btnDoRegister">Cadastrar novo usuário!</string>
     <string name="btnCreate">Criar!</string>
     <string name="btnOK">OK!</string>
     <string name="btnSave">Salvar!</string>
@@ -62,6 +63,7 @@
     <string name="errorInternetConnectionFail">Falha na conexão na Internet</string>
     <string name="errorNoDataReceived">Falha: nenhum dado recebido.</string>
     <string name="errorOperationNotAllwed">Operação não Permitida</string>
+
 
 
 
