@@ -4,9 +4,7 @@ import com.plataformaam.mobile.android.newclient.app.models.User;
 
 import junit.framework.TestCase;
 
-/**
- * Created by bernard on 08/11/2015.
- */
+
 public class SessionManagerTest extends TestCase {
 
     public void setUp(){
