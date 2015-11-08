@@ -60,16 +60,26 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
 
     //test: usar password errado.
     public void test_FormLoginAMWrongPassword(){
+        //Obtem o botão que abre o dialog do Login
         Button openDialogButton = (Button) solo.getView("plataformaam_login_button");
+        //Clica no botão
         solo.clickOnView(openDialogButton);
+        //Espera o dialog aberto para continuar
         solo.waitForDialogToOpen();
+        //Preenche a informação de login e senha com valores que darão erros
         solo.enterText((EditText) solo.getView(  R.id.etxLoginUserLoginUI ),"login_errado");
         solo.enterText((EditText) solo.getView(  R.id.etxPasswordUserLoginUI ),"senha_errada");
+        //Selecionar o botão que efetua o Login
         Button loginSubmitButton = (Button) solo.getView("plataformaam_do_login_button");
+        //Clica no botão para tentar login
         solo.clickOnView(loginSubmitButton);
+        //Espera que apareça o TOAST indicativo de erro.
         waitForToast("test_FormLoginAMWrongPassword",solo.getString(R.string.errorLoginFail));
+        //Fecha o dialog para encerrar os testes
         solo.goBack();
-
+        //Este teste atua apenas em nível de interface, os serviços em backgroud não se encontram implementados.
+        //Ao implemntar o login , que conecta em serviço web que efetua a validação , este teste precisa ser reescrito
+        //mockando o serviço para que o login falhe.
     }
 
     //test: Login efetuado e usuário redirecionado.
@@ -95,6 +105,7 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
 
 
     private void waitForToast(final String message, final String text) {
+        //TODO - refatorar , mover para Helper
         Condition textNotFound = new Condition() {
 
             @Override
